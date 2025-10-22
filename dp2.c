@@ -49,7 +49,7 @@ int main() {
             
             {dp[i][0] = 1;} else dp[i][0] = 0;
             if(location[0][i]!= 0)
-            {dp[0][i] = 1; }else dp[0][i]=0;} else{
+            {dp[0][i] = 1; }else {dp[0][i]=0;}
             for(int i = 1; i <= aim_x; i++){
             
             //if(location[][j]==0){printf("0\n"); break; 
