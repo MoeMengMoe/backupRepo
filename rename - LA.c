@@ -402,9 +402,9 @@ void rename_pdfs_in_folder(const char* folder_path, int num) {
             continue;
         }
 
-        // 构造新文件名：微积分第Num次作业3班学号姓名.pdf
+        // 构造新文件名：线代第Num次作业3班学号姓名.pdf
         char new_name[MAX_PATH] = {0};
-        sprintf(new_name, "微积分第%d次作业3班%s%s.pdf", num, stu.id, stu.name);
+        sprintf(new_name, "线代第%d次作业3班%s%s.pdf", num, stu.id, stu.name);
 
         char old_path[MAX_PATH], new_path[MAX_PATH];
         sprintf(old_path, "%s\\%s", folder_path, filename);

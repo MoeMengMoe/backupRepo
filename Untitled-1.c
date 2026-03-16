@@ -1,20 +1,18 @@
-#include <stdio.h>
-int GetLargestNum(int * inputarray,int quan){
-    int largestnum =inputarray[0] ;  // you should initialise it with array[0] because the num will be random!
-    for (int i = 0;i< quan;i++){//remember to use : but not , in for!!!  also i< quan coz  array is cal from 0!
-        if (inputarray[i] > largestnum){
-            largestnum =   inputarray[i];
+# include <stdio.h>
+void drawstars(int aim){
+    int i,s;
+    for(i=1;i<=aim;i++){//for loops need  ;   to divide each sentence,not ,
+        for(s=1;s<=i;s++){
+            printf("*在");
+
         }
+        //if(s==i){
+            printf("\n");
+        //}
     }
-    return largestnum;
-
-
 }
 int main(){
-    int myarray[]={12,32,282,39,0};
-    int quan =sizeof(myarray)/sizeof(int);
-    int output=GetLargestNum(myarray,quan);
-    printf("%d",output);//this is printf not scanf
-
-
+    int aim;
+    scanf("%d",&aim);
+    drawstars(aim);
 }
